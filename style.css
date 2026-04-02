@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #141519;
+  padding: 20px;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  background-color: #202731;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.content img {
+  background-color: #2f3c4d;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.content h1 {
+  color: white;
+  margin: 20px 0;
+}
+
+.content p {
+  color: #9699a8;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content .rating label {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2f3c4d;
+  color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .rating label:hover {
+  background-color: #fc7614;
+  color: #202731;
+}
+
+.content .rating input[type="radio"] {
+  display: none;
+}
+
+.content .rating input[type="radio"]:checked + label {
+  background-color: white;
+  color: #202731;
+}
+
+.content .submit {
+  display: flex;
+  justify-content: center;
+  background-color: #fc7614;
+  color: #202731;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 150px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: white;
+  color: #202731;
+}
+
+/* thank you start */
+
+.hidden {
+  display: none !important;
+}
+
+#thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.content .rating-selected {
+  background-color: #2f3c4d;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #fc7614;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 20px;
+  }
+
+  .content .submit {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .content {
+    padding: 10px;
+  }
+
+  .content .submit {
+    padding: 15px 30px;
+  }
+}
